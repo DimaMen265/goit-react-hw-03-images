@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 
-export const Button = props => (
+export const Button = ({ onClick }) => (
     <>
-        <button type="button" onClick={props.onClick} className={styles.button}>Load more</button>
+        <button type="button" onClick={onClick} className={styles.button}>Load more</button>
     </>
 );
